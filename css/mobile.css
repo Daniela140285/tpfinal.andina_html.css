@@ -9,17 +9,18 @@
 .hero::after{
     content: "";
     display: block;
-    width: 100%;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     position: absolute;
+    bottom: 0.1px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     z-index: 20;
 }
 .back_video{
     position: absolute;
     z-index: 20;
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    height: 100dvh;
     object-fit: cover;
     background-position: center;
 }
@@ -27,7 +28,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     position: fixed; 
-    width: 100%;
+    width: 100dvw;
     z-index: 40;
     background-color: var(--bgc-body);
     justify-content: space-around;
@@ -35,11 +36,9 @@ nav{
 }
 h1{
     width: 50%;
-    margin: 0;
 }
 .logo img{
     width: 1.3rem ;
-    padding: 5px 0;
 }
 .icon_menu a i{
     padding: 20px;
@@ -60,8 +59,7 @@ h1{
     flex-direction: column;
     background-color:var(--bgc-body);
     gap: 20px;
-    width: 100%;
-    /* max-width: 320px; */
+    width: 100dvw;
 }
 .close{
     display: none;
@@ -81,7 +79,7 @@ h1{
     z-index: 30;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100dvw;
 }
 /* -- GENERALES--*/
 .container{
@@ -227,6 +225,8 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin: 0;
+    padding: 20px 0 0;
 }
 .legales li a{
     color: #000;
@@ -334,6 +334,7 @@ main{
     font-size: 4rem;
     text-transform: uppercase;  
     margin: 0;
+    padding: 20px 0 0;
  
 }
 .container_rubia{
@@ -376,10 +377,9 @@ main{
     color: #86754B;
 }
 .presentaciones_img li{
-    width: 50%;
 }
 .presentaciones_img li img{
-    width: 100%; 
+width: 4.5rem;
 }
 .presentaciones_img li p{
     text-align: center;
