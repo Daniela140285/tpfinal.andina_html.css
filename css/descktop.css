@@ -1,3 +1,4 @@
+/*----HERO----*/
 .links_menu{
     display: flex;
     gap: 20px;
@@ -7,8 +8,18 @@
 .links_menu li a{
     font-weight: 600;
 }
+
 .icon_menu{
     display: none;
+}
+.click{
+    box-shadow: 1px 1px 5px 2px rgba(181,180,168,1);
+    padding: 3px 5px;
+    background-color: rgb(228, 228, 225) ;
+    transition: all 1s ;
+}
+.click:hover{
+    font-size: 1.3rem;
 }
 .hero_title{
     position: absolute;
@@ -40,5 +51,11 @@
 /*----RUBIA----*/
 .container_rubia{
     flex-direction: row;
+    justify-content: space-between;
 }
-
+.informacion_rubia{
+    width: 50%;
+}
+.presentaciones_container{
+    width: 40%;
+}

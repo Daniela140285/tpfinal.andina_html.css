@@ -18,10 +18,9 @@
 .container_rubia{
     padding: 0 25px;
 }
-.informacion_rubia h2{
-    font-size: 10rem;
-    text-transform: uppercase;
-    margin: 20px 0;
+.title_cerveza{
+    padding-left: 25px ;
+    font-size: 5rem;
 }
 .presentaciones_img li{
     width: 20%;

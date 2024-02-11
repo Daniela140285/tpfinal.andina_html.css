@@ -36,12 +36,13 @@ nav{
 }
 h1{
     width: 50%;
+    margin-bottom: 0;
 }
 .logo img{
     width: 1.3rem ;
 }
 .icon_menu a i{
-    padding: 20px;
+    padding: 20px 0;
     font-size: 2rem;
 }
 .links_menu{
@@ -99,10 +100,10 @@ h1{
     margin: 0 20px;    
 }
 .title{
-    font-family: 'Futura Std', sans-serif;
+    font-family: var(--font-title);
     text-transform: uppercase;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0px 5px 30px;
 }
 main{
@@ -157,6 +158,7 @@ main{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-weight:700;
+    margin-top: 0;
 }
 /*TOME MENOS*/
 .tomeMenos{
@@ -180,7 +182,6 @@ main{
     width: 100%;
     object-fit: cover;
 }
-
 
 /*FOOTER*/
 
@@ -240,20 +241,23 @@ main{
     font-size: .8rem;
 }
 
-/*----COMPRAR----*/
+        /*----COMPRAR----*/
 
 /*--hero--*/
-.hero_comprar{
+.hero_cerveza{
     background-color: var(--bgc-body);
     width: 100dvw;
     height: 80dvh;
-    background-image: url(../assets/img/hero.compras.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;    
+    background-size:cover; 
+    background-position-y: 80px;   
     position: relative;
+    background-attachment: fixed;
 }
-
+.hero_cerveza_comprar{
+    background-image: url(../assets/img/hero.compras.jpg);
+}
 .hero_comprar::after{
     content: "";
     display: block;
@@ -272,7 +276,6 @@ main{
 .container_formulario{
     width: 70%;    
     padding: 20px;
-    border: 1px solid black;
     background-color: #eadbc5;    
 }
 .formulario{
@@ -285,11 +288,12 @@ main{
 .formulario_items label{
     flex-basis: 150px;
     font-family: var(--font-secondary);
+    font-size: 1.2rem;
 }
 .formulario_items input, textarea{
     flex: 1;
     padding: 5px;
-    border: 1px solid;
+    border: 0.8px solid;
     font-family: var(--font-secondary);
 }
 .btn{
@@ -307,16 +311,13 @@ main{
     background-color:  #9e8151ab;
 }
 
-/*----RUBIA----*/
+
+        /*----RUBIA----*/
+
+/*--hero--*/
+
 .hero_cerveza_rubia{
-    background-color: var(--bgc-body);
-    width: 100dvw;
-    height: 80dvh;
     background-image: url(../assets/img/hero.rubia.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;    
-    position: relative;
 }
 .hero_cerveza_rubia::after{
     content: "";
@@ -331,13 +332,14 @@ main{
     padding: 0 25px;  
 }
 .title_cerveza{
+    font-family: var(--font-title);
     font-size: 4rem;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    letter-spacing: 10px;
     margin: 0;
-    padding: 20px 0 0;
- 
+    padding: 25px 0 0 ; 
 }
-.container_rubia{
+*.container_rubia{
     
     font-family: var(--font-secondary);
     display: flex;
@@ -347,11 +349,12 @@ main{
 .informacion_rubia h3{
     font-size: 2rem;
     letter-spacing: 2px;
+    margin-top: 0;
 }
 .informacion_rubia p{
-    line-height: 25px;  
     font-size: 1.1rem; 
     line-height: 2.5rem; 
+    margin: 10px 0;
 }
 .presentaciones_container{
     display: flex;
@@ -361,8 +364,9 @@ main{
 .presentaciones_links, .presentaciones_img{
     display: flex;
     padding: 0;
+    margin-top: 25px;
 }
-.presentaciones_links li, .presentaciones_img li{
+.presentaciones_links li{
     padding: 10px;
 }
 .presentaciones_links li p{
@@ -370,20 +374,30 @@ main{
     text-align: center;
 }
 .presentaciones_links :nth-child(2){
-    border-right: 2px solid #86754B;
-    border-left: 2px solid #86754B;
+    border-right: 2px solid var(--color-third);
+    border-left: 2px solid var(--color-third);
 }
 .presentaciones_container p{
-    color: #86754B;
+    color: var(--color-third);
+    margin: 0;
+    line-height: 2rem;
 }
 .presentaciones_img li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .presentaciones_img li img{
-width: 4.5rem;
+    width: 4.5rem;
 }
+
 .presentaciones_img li p{
     text-align: center;
     color: #000;
 }
 
+/*----ROJA----*/
+.hero_cerveza_roja{
+    background-image: url(../assets/img/hero.roja.jpg);
+}
 
