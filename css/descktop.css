@@ -5,21 +5,15 @@
     align-items: center;
     margin-right: 30px;
 }
-.links_menu li a{
-    font-weight: 600;
-}
-
 .icon_menu{
     display: none;
 }
 .click{
-    box-shadow: 1px 1px 5px 2px rgba(181,180,168,1);
     padding: 3px 5px;
-    background-color: rgb(228, 228, 225) ;
-    transition: all 1s ;
-}
+    background-color: #fff;
+    }
 .click:hover{
-    font-size: 1.3rem;
+    border: 1px solid black;
 }
 .hero_title{
     position: absolute;
@@ -32,11 +26,11 @@
     font-family: var(--font-secondary);
     text-transform: uppercase;
     font-size: 6rem;
-    color: #fff; 
+    color: var(--color-fontwo); 
     transition: 2s;
 }
 .hero_title:hover{
-    -webkit-text-stroke:2px #fff; 
+    -webkit-text-stroke:2px var(--color-fontwo); 
     color: transparent;
     letter-spacing: 5px;
 }

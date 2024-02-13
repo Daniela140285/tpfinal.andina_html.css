@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/isabella-script'); /*gustito*/
+@import url('https://fonts.cdnfonts.com/css/isabella-script'); 
 @import url('https://fonts.cdnfonts.com/css/crazy-2');
 
 @import url(./normalize.css);
@@ -13,10 +13,11 @@
 
                                                                                                 
 :root{
-    --color-font: #fff;
+    --color-fontone: #000;
+    --color-fontwo: #fff;
     --font-secondary: 'Noto Sans', sans-serif;
+    --font-title: 'CrazyV1', sans-serif;   
     --color-third: #86754B;
-    --font-title: 'CrazyV1', sans-serif;    /*tome menos..*/
     --bgc-body: #f1f0E4;
     --padding-section: 50px 0px;                                               
 

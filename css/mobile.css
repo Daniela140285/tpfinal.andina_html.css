@@ -1,5 +1,5 @@
-/*HEADER*/
-
+/*----INDEX----*/
+/*-header-*/
 .hero{
     height: 100dvh;  
     position: relative;
@@ -34,9 +34,10 @@ nav{
     justify-content: space-around;
     box-shadow: 0px 2px 15px 1px rgba(181,180,168,1);
 }
-h1{
+.logo{
     width: 50%;
     margin-bottom: 0;
+    margin-top: 10px;
 }
 .logo img{
     width: 1.3rem ;
@@ -47,12 +48,12 @@ h1{
 }
 .links_menu{
     display: none;
+    margin: 0;
 }
 .links_menu li a{
-    font-family: var(--font-secondary);
-    font-weight:500 ;
+    font-family: var(--font-title);
     font-size: 1.2rem;
-    color: #000;
+    color: var(--color-fontone);
     text-transform: uppercase;
 }
 #menu:target .links_menu {
@@ -74,7 +75,7 @@ h1{
 .hero_paragraph{
     position: absolute;
     bottom: 0;
-    color: var(--color-font);
+    color: var(--color-fontwo);
     font-size: 0.6rem;
     font-family: var(--font-secondary);
     z-index: 30;
@@ -110,8 +111,7 @@ main{
     background-color: var(--bgc-body);
 }
 /*--GUSTITO--*/
- 
-.gustito_figure{
+ .gustito_figure{
     width: 50vw;
     max-width: 300px;
     min-width: 150px;
@@ -131,8 +131,6 @@ main{
 }
 
 /*--LATAS--*/
-
-
 .latas_cards{
     display: flex;
     flex-wrap: wrap;
@@ -182,9 +180,7 @@ main{
     width: 100%;
     object-fit: cover;
 }
-
 /*FOOTER*/
-
 .container_footer{
     display: flex;
     flex-direction: column;
@@ -218,7 +214,7 @@ main{
 }
 .fa-brands, .fa-regular {
     font-size: 2rem;
-    color: #000;
+    color: var(--color-fontone);
 }
 .legales{
     width: 100%;
@@ -230,7 +226,7 @@ main{
     padding: 20px 0 0;
 }
 .legales li a{
-    color: #000;
+    color: var(--color-fontone);
     font-family: var(--font-secondary);
     font-size: .9rem;
 }
@@ -248,12 +244,11 @@ main{
     background-color: var(--bgc-body);
     width: 100dvw;
     height: 80dvh;
-    background-position: center;
     background-repeat: no-repeat;
     background-size:cover; 
-    background-position-y: 80px;   
     position: relative;
     background-attachment: fixed;
+    background-position: center;
 }
 .hero_cerveza_comprar{
     background-image: url(../assets/img/hero.compras.jpg);
@@ -299,6 +294,7 @@ main{
 .btn{
     background-color:#a3968d;
     text-transform: uppercase;
+    font-family: var(--font-secondary);
     border: none;
     padding: 6px;
     margin-top: 5px;
@@ -308,7 +304,10 @@ main{
     transition: 1s;
 }
 .btn:hover{
-    background-color:  #9e8151ab;
+    background-color: #fff;
+    color: var(--color-fontone);
+    border: 1px solid;
+    font-weight: bold;
 }
 
 
@@ -390,14 +389,19 @@ main{
 .presentaciones_img li img{
     width: 4.5rem;
 }
-
 .presentaciones_img li p{
     text-align: center;
-    color: #000;
+    color: var(--color-fontone);
 }
 
-/*----ROJA----*/
+        /*----ROJA----*/
 .hero_cerveza_roja{
     background-image: url(../assets/img/hero.roja.jpg);
+    background-position: top;
 }
 
+        /*----NEGRA----*/
+.hero_cerveza_negra{
+    background-image: url(../assets/img/hero.negra.jpg);
+    background-position: right;
+}
