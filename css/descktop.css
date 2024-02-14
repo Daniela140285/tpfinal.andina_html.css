@@ -8,11 +8,11 @@
 .icon_menu{
     display: none;
 }
-.click{
+.links_menu :nth-child(4){
     padding: 3px 5px;
     background-color: #fff;
     }
-.click:hover{
+.links_menu :nth-child(4):hover{
     border: 1px solid black;
 }
 .hero_title{
@@ -43,11 +43,11 @@
     width: 30%;
 }
 /*----RUBIA----*/
-.container_rubia{
+.container_cerveza{
     flex-direction: row;
     justify-content: space-between;
 }
-.informacion_rubia{
+.informacion_cerveza{
     width: 50%;
 }
 .presentaciones_container{
